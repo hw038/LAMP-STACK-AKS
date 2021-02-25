@@ -5,7 +5,7 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
 
 1. 구조
 
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa00b6f7-9bcd-4896-aa3e-24ba5b066933/k8s-LAMP-Stack_archi.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa00b6f7-9bcd-4896-aa3e-24ba5b066933/k8s-LAMP-Stack_archi.png)
+    ![arhcitecture](./img/k8s-LAMP-Stack_archi.jpg)
 
     세팅 과정 요약
 
