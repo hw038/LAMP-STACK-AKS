@@ -19,9 +19,9 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
        Docker repo public(web,db) 사용하여 deployment, svc 세팅   
        테스트 결과 DB 데이터 안들어가있음 확인하여 별도로 import   
        (kubectl exec pod mysql -it -- mysql -u root -prP@ssw0rd blog < data.sql)   
-    4) 최적화
-       nginx-ingress controller   
+    4) 최적화 
        DB PVC(File Share)   
+       session PVC (File Share)   
 2. Docker Image 작성
     1) Web - ubuntu, apache, php7 설치된 이미지를 pull한 후 /var/www/html 경로에 소스 추가 후 commit → tag → push 진행   
     2) DB - MySQL 5.6 이미지를 Pull한 후 DB 데이터 Import → commit → tag → push   
