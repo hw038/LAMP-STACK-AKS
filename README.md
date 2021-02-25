@@ -7,7 +7,7 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
 
     ![arhcitecture](./img/k8s-LAMP-Stack_archi.jpg)
 
-    세팅 과정 요약
+2. 세팅 과정 요약
 
     1) Docker 이미지 생성   
        web - ubuntu, apache, php7 + source(blog)   
@@ -22,12 +22,12 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
     4) 최적화 
        DB PVC(File Share)   
        session PVC (File Share)   
-2. Docker Image 작성
+3. Docker Image 작성
     1) Web - ubuntu, apache, php7 설치된 이미지를 pull한 후 /var/www/html 경로에 소스 추가 후 commit → tag → push 진행   
     2) DB - MySQL 5.6 이미지를 Pull한 후 DB 데이터 Import → commit → tag → push   
         → Data Import 해도 컨테이너에서 이미지로 사용 시 정상적으로 데이터를 불러오지 않음   
         → PVC로 변경
-3. 적용 방법
+4. 적용 방법
     1) secret 생성   
         ```sh secret.sh```
     2) azure file 세팅   
