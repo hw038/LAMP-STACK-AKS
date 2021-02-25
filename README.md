@@ -47,6 +47,10 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
 
 3. 적용 방법
 
-    1) secret 생성
-        ```sh secret.sh```
-    2) 
+    1) secret 생성   
+        ```bash sh secret.sh```
+    2) azure file 세팅
+       ```kubectl apply -f azure-file*```
+    4) 
+    5) 
+    
