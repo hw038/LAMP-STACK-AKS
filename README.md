@@ -40,7 +40,7 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
        mysql-server pod 확인
        ```kubectl exec mysql-server-675dcfd95b-zsz99 -it -- mysql -u root -prP@ssw0rd blog < data.sql```   
        DB명 blog가 없는 경우 생성한 후 진행
-    5) 동작 확인   
+5. 동작 확인   
        ```kubectl get svc```   
        blog-web의 EXTERNAL-IP 로 웹 접속   
        EXTERNAL-IP/admin 으로 관리자 계정 접속(admin/admin)   
