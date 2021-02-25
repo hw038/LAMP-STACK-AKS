@@ -31,15 +31,15 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
     1) secret 생성   
         ```sh secret.sh```
     2) azure file 세팅   
-       ```kubectl apply -f azure-file-sc.yaml```
-       ```kubectl apply -f azure-file-pvc.yaml```
+       ```kubectl apply -f azure-file-sc.yaml```   
+       ```kubectl apply -f azure-file-pvc.yaml```   
     3) web, db Deployment 및 Service 배포   
-       ```kubectl apply -f web-db.yaml```
+       ```kubectl apply -f web-db.yaml```   
     4) DB 데이터 삽입(예시)   
-       ```kubectl exec mysql-server-675dcfd95b-zsz99 -it -- mysql -u root -prP@ssw0rd blog < data.sql```
+       ```kubectl exec mysql-server-675dcfd95b-zsz99 -it -- mysql -u root -prP@ssw0rd blog < data.sql```   
        DB명 blog가 없는 경우 생성한 후 진행
     5) 동작 확인   
-       ```kubectl get svc```
+       ```kubectl get svc```   
        blog-web의 EXTERNAL-IP 로 웹 접속   
        EXTERNAL-IP/admin 으로 관리자 계정 접속(admin/admin)   
        admin 하위 경로를 통해 기능 확인
