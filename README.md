@@ -36,6 +36,8 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
     3) web, db Deployment 및 Service 배포   
        ```kubectl apply -f web-db.yaml```   
     4) DB 데이터 삽입(예시)   
+       ```kubectl get pod mysql-server```   
+       mysql-server pod 확인
        ```kubectl exec mysql-server-675dcfd95b-zsz99 -it -- mysql -u root -prP@ssw0rd blog < data.sql```   
        DB명 blog가 없는 경우 생성한 후 진행
     5) 동작 확인   
