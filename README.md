@@ -21,7 +21,7 @@ LAMP Stack을 AKS 환경에 배포하며 쿠버네티스 환경 이해
        (kubectl exec pod mysql -it -- mysql -u root -prP@ssw0rd blog < data.sql)   
     4) 최적화   
        DB PVC(File Share)   
-       Session PVC (File Share)
+       Session PVC (File Share)   
        -> Session의 경우 redis 사용하는 것이 더 바람직함.(LAMP Stack에는 벗어남)
 3. Docker Image 작성
     1) Web - ubuntu, apache, php7 설치된 이미지를 pull한 후 /var/www/html 경로에 소스 추가 후 commit → tag → push 진행   
